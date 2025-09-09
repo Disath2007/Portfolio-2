@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Disath Damsutha</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/letter-d.png">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo__dot"></span>
+        <span class="logo__text">Disath_Damsutha</span>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn">☀️</button>
+        <button class="hamburger" id="menu-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section id="home" class="section hero container reveal">
+      <div class="hero__grid">
+        <div>
+          <p class="eyebrow">Hello, I am</p>
+          <h1 class="hero__title">Disath Damsutha</h1>
+          <p class="hero__subtitle">Undergraduate | BSc (Hons) Computing</p>
+          <p class="hero__subtitle">The only way to do great work is to love what you do.</p>
+          <p class="hero__tagline">I’m knowledgeable about <span class="typed-wrapper"><span id="typed"></span><span class="typed-cursor">|</span></span></p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <img src="assets/profile.png" alt="Profile photo" class="hero__img">
+          <span class="shape shape-a"></span>
+          <span class="shape shape-b"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container reveal">
+      <div class="section__header">
+        <h2>About Me</h2>
+        <p class="muted">Get to know me</p>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h3>Hi, I’m Disath 👋</h3>
+          <p>I’m an IT student who loves coding, learning new technologies, and creating projects that make a difference. Always curious and eager to grow!</p>
+          <ul class="tags">
+            <li class="tag">BSc (Hons) Computing</li>
+            <li class="tag">Undergraduate</li>            
+          </ul>
+        </div>
+        <div class="about__summary">
+          <div class="stat card">
+            <i>🎓</i>
+            <div>
+              <div class="stat__value">1 Year</div>
+              <div class="stat__label">Undergraduate</div>
+            </div>
+          </div>
+          <div class="stat card">
+            <i>💻</i>
+            <div>
+              <div class="stat__value">Not Much</div>
+              <div class="stat__label">Coding Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container reveal">
+      <div class="section__header">
+        <h2>Skills</h2>
+        <p class="muted">Technical expertise</p>
+      </div>
+      <div class="skills__grid">
+        <div class="card skill-card">
+          <h3>Programming</h3>
+          <div class="skill">
+            <div class="skill__head"><span>Python</span><span>30%</span></div>
+            <div class="bar"><span class="bar__fill" data-width="30%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>Java</span><span>0%</span></div>
+            <div class="bar"><span class="bar__fill" data-width="00%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>C++</span><span>10%</span></div>
+            <div class="bar"><span class="bar__fill" data-width="10%"></span></div>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <h3>Web</h3>
+          <div class="skill"><div class="skill__head"><span>HTML</span><span>75%</span></div><div class="bar"><span class="bar__fill" data-width="75%"></span></div></div>
+          <div class="skill"><div class="skill__head"><span>CSS</span><span>75%</span></div><div class="bar"><span class="bar__fill" data-width="75%"></span></div></div>
+          <div class="skill"><div class="skill__head"><span>JavaScript</span><span>50%</span></div><div class="bar"><span class="bar__fill" data-width="50%"></span></div></div>
+          <div class="skill"><div class="skill__head"><span>React</span><span>0%</span></div><div class="bar"><span class="bar__fill" data-width="0%"></span></div></div>
+        </div>
+        <div class="card skill-card">
+          <h3>Databases</h3>
+          <div class="skill"><div class="skill__head"><span>MySQL</span><span>65%</span></div><div class="bar"><span class="bar__fill" data-width="65%"></span></div></div>
+          <div class="skill"><div class="skill__head"><span>MongoDB</span><span>0%</span></div><div class="bar"><span class="bar__fill" data-width="0%"></span></div></div>
+        </div>
+        <div class="card skill-card">
+          <h3>Tools</h3>
+          <div class="skill"><div class="skill__head"><span>Git</span><span>80%</span></div><div class="bar"><span class="bar__fill" data-width="80%"></span></div></div>
+          <div class="skill"><div class="skill__head"><span>Docker</span><span>0%</span></div><div class="bar"><span class="bar__fill" data-width="0%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container reveal">
+      <div class="section__header">
+        <h2>Projects</h2>
+        <p class="muted">Some of my work</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      </div>
+      <div class="projects__grid">
+        <div class="project card" data-cat="web">
+          <div class="project__img"><img src="assets/project1.jpg" alt="Project 3"></div>
+          <div class="project__body">
+            <h3>Gym Management System</h3>
+            <p>A full-stack system to manage members and trainers.</p>
+            <div class="project__links">
+              <a href="https://drive.google.com/drive/folders/1x9WMGqBpp-xGu7nBb6CFfUaw8eOXRJHA" class="btn-ghost-sm">Drive</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section container reveal">
+      <div class="section__header">
+        <h2>Achievements & Certifications</h2>
+      </div>
+      <div class="achievements__grid">
+        <div class="achievement">
+          <div class="badge">🏅</div>
+          <div class="ach__body">
+            <h3>***</h3>
+            <p class="muted">Not Yet</p>
+          </div>
+        </div>
+        <div class="achievement">
+          <div class="badge">📜</div>
+          <div class="ach__body">
+            <h3>^^^</h3>
+            <p class="muted">Not Yet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container reveal">
+      <div class="section__header">
+        <h2>Contact Me</h2>
+      </div>
+        <aside class="contact__aside">
+          <h3>Let’s connect</h3>
+          <ul class="contact__links">
+            <li><a href="mailto:disathdamsutha6@gmail.com" class="contact-link">📧 Email</a></li>
+            <li><a href="https://linkedin.com" target="_blank" class="contact-link">💼 LinkedIn</a></li>
+            <li><a href="https://github.com/Disath2007/" target="_blank" class="contact-link">🐙 GitHub</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2025 Disath Damsutha. All Rights Reserved.</p>
+      <div class="footer__social">
+        <a href="#">🐦</a>
+        <a href="#">💼</a>
+        <a href="#">🐙</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
